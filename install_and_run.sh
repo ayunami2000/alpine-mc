@@ -11,7 +11,4 @@ Xvfb +extension GLX &
 export DISPLAY=:0
 fluxbox &
 x11vnc -noshm -forever &
-clear
-echo USERNAME PLEASE
-read mcuser
-yes y | python3 ./portablemc/portablemc.py -u $mcuser
+yes y | python3 ./portablemc/portablemc.py -u Joe
