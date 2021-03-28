@@ -9,6 +9,6 @@ git clone https://github.com/mindstorm38/portablemc
 ./noVNC/utils/launch.sh --listen 80 &
 Xvfb +extension GLX &
 export DISPLAY=:0
-fluxbox &
-x11vnc -noshm -forever &
+#fluxbox &
+x11vnc -noshm -geometry 900x720 -shared -forever &
 yes y | python3 ./portablemc/portablemc.py start -u Player$RANDOM
