@@ -11,4 +11,4 @@ Xvfb +extension GLX &
 export DISPLAY=:0
 fluxbox &
 x11vnc -noshm -forever &
-yes y | python3 ./portablemc/portablemc.py -u Joe
+yes y | python3 ./portablemc/portablemc.py start -u Player$RANDOM
